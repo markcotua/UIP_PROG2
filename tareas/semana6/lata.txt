@@ -1,0 +1,39 @@
+package tarea_sem_6;
+//Crear una clase llamada Lata que maneje como atributos la altura y el diámetro,
+//y como métodos calcular el volumen y calcular la superficie de la lata. La fórmula 
+//para calcular el volumen es: PI * radio * radio * altura. La fórmula para calcular
+//la superficie es: (2 * PI) * (radio * radio) + (2 * PI) * (radio * altura). 
+//el constructor debe inicializar los atributos a 4.8 y 2.5, respectivamente.
+//Los valores para los objetos de tipo Lata deben ser obtenidos por teclado.
+//Lo que debe hacer el programa es calcular el volumen y superficie para 3 objetos diferentes.
+
+
+public class lata {  
+public static double altura, diametro, superficie, volumen; 
+
+public lata () {  
+    
+	altura=4.8;
+	diametro=2.5;
+    }
+    
+
+public  lata  (double altura, double diametro){ 
+lata.altura=altura;  
+lata.diametro=diametro;
+} 
+
+public static void calcular_s(){
+	superficie= ((3.1416*(diametro/2)*(diametro/2))+((2*3.1416)*((diametro/2)*altura)));
+	System.out.println("Superficie: "+ superficie);
+	
+}
+
+//PI * radio * radio * altura
+public static void calcular_v(){
+	volumen= ((3.1416*(diametro/2)*(diametro/2)*altura));
+	System.out.println("volumen: "+ volumen);	
+}
+
+}
+
